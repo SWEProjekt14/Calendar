@@ -84,14 +84,14 @@
     }
 }
  
-- (void)createEvent:(CDVInvokedUrlCommand*)command {
+- (void)addCalendarEntry:(CDVInvokedUrlCommand*)command {
     EKCalendar* calendar = self.eventStore.defaultCalendarForNewEvents;
     [self createEventWithCalendar:command calendar:calendar];
 }
 
 
 
--(void) deleteEvent:(CDVInvokedUrlCommand *)command
+-(void) deleteCalendarEntry:(CDVInvokedUrlCommand *)command
    {
 
 
@@ -116,7 +116,7 @@
     }
    
 }
--(void) modifyEvent:(CDVInvokedUrlCommand *) command
+-(void) editCalendarEntry:(CDVInvokedUrlCommand *) command
 {
     
     NSString* callback=command.callbackId;
@@ -171,7 +171,7 @@ if(event!=nil)
 }
 
 
--(NSString*) searchEvent:(CDVInvokedUrlCommand*) command
+-(NSString*) searchCalendarEntryId:(CDVInvokedUrlCommand*) command
                {
 
     NSDictionary *options = [command.arguments objectAtIndex:0];
