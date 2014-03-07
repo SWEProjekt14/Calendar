@@ -41,8 +41,8 @@
 	<!-- iOS  -->
 	<platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="CalendarPlugin">
-                <param name="ios-package" value="CalendarPlugin"/>
+            <feature name="Calendar">
+                <param name="ios-package" value="Calendar"/>
             </feature>
         </config-file>
 
