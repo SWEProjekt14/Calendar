@@ -1,13 +1,13 @@
-#import "CalendarPlugin.h"
+#import "Calendar.h"
 #import <Cordova/CDV.h>
 #import <EventKitUI/EventKitUI.h>
 #import <EventKit/EventKit.h>
 
-@implementation CalendarPlugin
+@implementation Calendar
 @synthesize eventStore;
 
 - (CDVPlugin*) initWithWebView:(UIWebView*)theWebView {
-    self = (CalendarPlugin*)[super initWithWebView:theWebView];
+    self = (Calendar*)[super initWithWebView:theWebView];
     if (self) {
         [self initEventStoreWithCalendarCapabilities];
     }
