@@ -3,7 +3,7 @@
 #import <EventKitUI/EventKitUI.h>
 #import <EventKit/EventKit.h>
 
-@interface CalendarPlugin : CDVPlugin
+@interface Calendar : CDVPlugin
 
 @property (nonatomic, retain) EKEventStore* eventStore;
 
