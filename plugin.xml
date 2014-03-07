@@ -50,8 +50,8 @@
             <clobbers target="calendar" />
         </js-module>
 
-        <header-file src="src/ios/CalendarPlugin.h" />
-        <source-file src="src/ios/CalendarPlugin.m" />
+        <header-file src="src/ios/Calendar.h" />
+        <source-file src="src/ios/Calendar.m" />
 
     </platform>
 	
