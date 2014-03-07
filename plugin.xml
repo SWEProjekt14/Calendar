@@ -52,6 +52,9 @@
 
         <header-file src="src/ios/Calendar.h" />
         <source-file src="src/ios/Calendar.m" />
+        
+        <framework src="EventKit.framework" />
+      	<framework src="EventKitUI.framework" />
 
     </platform>
 	
