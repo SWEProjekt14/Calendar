@@ -7,8 +7,8 @@
 
 @property (nonatomic, retain) EKEventStore* eventStore;
 
-- (void) createEvent:(CDVInvokedUrlCommand*) command;
-- (void) deleteEvent:(CDVInvokedUrlCommand*) command;
--(void) modifyEvent:(CDVInvokedUrlCommand *) command;
--(NSString*) searchEvent:(CDVInvokedUrlCommand *) command;
+- (void) addCalendarEntry:(CDVInvokedUrlCommand*) command;
+- (void) deleteCalendarEntry:(CDVInvokedUrlCommand*) command;
+-(void) editCalendarEntry:(CDVInvokedUrlCommand *) command;
+-(NSString*) searchCalendarEntryId:(CDVInvokedUrlCommand *) command;
 @end
