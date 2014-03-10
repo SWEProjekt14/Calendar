@@ -41,8 +41,8 @@
 	<!-- iOS  -->
 	<platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="CalendarPlugin">
-                <param name="ios-package" value="CalendarPlugin"/>
+            <feature name="Calendar">
+                <param name="ios-package" value="Calendar"/>
             </feature>
         </config-file>
 
@@ -50,8 +50,11 @@
             <clobbers target="calendar" />
         </js-module>
 
-        <header-file src="src/ios/CalendarPlugin.h" />
-        <source-file src="src/ios/CalendarPlugin.m" />
+        <header-file src="src/ios/Calendar.h" />
+        <source-file src="src/ios/Calendar.m" />
+        
+        <framework src="EventKit.framework" />
+      	<framework src="EventKitUI.framework" />
 
     </platform>
 	
